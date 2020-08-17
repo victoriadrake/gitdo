@@ -26,7 +26,7 @@ do
 	if [ -d "$f/.git" ]
 	then
         mod=0
-		cd $f
+		cd "$f"
 
 		# Print origin push url
         s=$(git remote -v | grep push | awk '{print $2}')
